@@ -1,0 +1,68 @@
+######实验一#########
+#include<stdio.h>
+void main()
+{
+	int a=0,b=0,c=0;
+	char n=0,m=0;
+	scanf("%d%c%d%c%d",&a,&n,&b,&m,&c);
+	if('+'==n)
+		if(a+b==c)
+			printf("Perfect");
+		else
+			{
+				printf("Error\n");
+				printf("%d+%d=%d",a,b,a+b);
+		    }
+	else if('-'==n)
+		if(a-b==c)
+			printf("Perfect");
+		else
+		{
+			printf("Error\n");
+			printf("%d-%d=%d",a,b,a-b);
+		}
+	
+}
+
+#####实验二########
+#include<stdio.h>
+void main()
+{
+int a,b;
+char op;
+scanf("%d%c%d",&a,&op,&b);
+switch(op)
+	{
+	case '+': printf("%d+%d=%d",a,b,a+b);
+		break;
+	case '-': printf("%d-%d=%d",a,b,a-b);
+		break;
+	case '*':printf("%d*%d=%d",a,b,a*b);
+		break;
+	case '/':printf("%d/%d=%d",a,b,a/b);
+		break;
+	default:printf("输入错误")；
+	}
+}
+
+######实验三########
+#include<stdio.h>
+void main()
+{
+	int x;
+	scanf("%d",&x);
+	if(x<0)
+		printf("0");
+	else if(x<10)
+		printf("%d",x);
+	else if(x<20)
+		printf("10");
+	else if(x<40)
+		printf("%.2f",(-0.5)*x+20);
+	else
+		printf("输入x有误\n");
+}
+
+
+
+
